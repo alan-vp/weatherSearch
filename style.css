@@ -1,0 +1,149 @@
+body {
+  background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center fixed; ;
+  background-size: cover;
+  position: relative;
+  color: whitesmoke;
+}
+
+.container{
+  display: flex;
+}
+
+.search-card {
+  text-align: center;
+  width: 50%;
+  /* position: absolute; */
+}
+
+h1 {
+  margin-top: 50px;
+  color: whitesmoke;
+  font-size: 40px;
+  width: 80%;
+  margin: 50px auto 20px;
+}
+
+.weather {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.location-data {
+  margin: 20px;
+}
+
+.location-data label {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+
+.location-data input {
+  width: 60%;
+}
+
+input#location {
+  font-family: cursive;
+  letter-spacing: 2px;
+  margin-left: 0px;
+  text-align: center;
+}
+
+.btn-search {
+  width: 85%;
+  border-radius: 5px;
+  padding: 8px 0px;
+  border: none;
+  background-color: #000000;
+  color: whitesmoke;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.weather-card {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 5px;
+  width: 25%;
+  margin: 40px auto;
+  /* position: absolute;
+  right: 20%; */
+  color: whitesmoke;
+}
+
+.weather-description {
+  margin: 0 auto;
+  letter-spacing: 2px;
+}
+
+.weather-card div {
+  text-align: center;
+}
+
+.city-name {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.weather-icon {
+  display: none;
+  margin: auto;
+  width: 130px;
+}
+
+.temperature {
+  margin-top: 0;
+}
+
+.no-location {
+  text-align: center;
+  font-size: 15px;
+}
+
+.max-temp {
+  margin: 0;
+}
+
+.min-temp {
+  margin-top: 10px;
+}
+
+@media (max-width: 769px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .search-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .weather-card {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .location-data {
+    margin: 0px;
+}
+
+  .location-data input {
+    width: 80%;
+}
+
+  .weather {
+    width: 70%;
+    margin: auto;
+  }
+
+  .no-location {
+    width: 85%;
+    text-align: center;
+    margin: 10px auto;
+    color: black;
+    font-size: 13px;
+  }
+}
