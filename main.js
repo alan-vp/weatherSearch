@@ -1,5 +1,3 @@
-/* import API_KEY from "./apikey"; */
-
 const input = document.querySelector('input[name=location]');
 const button = document.querySelector('input[type=submit]');
 const form = document.querySelector('.weather');
@@ -65,8 +63,3 @@ const apiCall = (city) => {
     }
   })
 }
-
-
-
-
-//	.catch(err => console.error(err));
