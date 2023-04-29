@@ -1,10 +1,3 @@
-require('dotenv').config();
-const client = new ApiClient(process.env.API_KEY);
-console.log(client);
-
-
-// const apiKey = new ApiClient(process.env.API_KEY);
-// console.log(apiKey);
 const input = document.querySelector('input[name=location]');
 const button = document.querySelector('input[type=submit]');
 const form = document.querySelector('.weather');
@@ -29,7 +22,7 @@ form.addEventListener('submit', (e) => {
 });
 
 const apiCall = (city) => {
-  fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`)
+  fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${API_KEY}`)
   .then(response => response.json())
   .then(data => {
     if (data.length == 0) {
