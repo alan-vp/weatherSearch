@@ -1,3 +1,5 @@
+/* import API_KEY from "./apikey"; */
+
 const input = document.querySelector('input[name=location]');
 const button = document.querySelector('input[type=submit]');
 const form = document.querySelector('.weather');
@@ -34,7 +36,7 @@ const apiCall = (city) => {
         //const country = country.name;
         const latitude = country.lat;
         const longitude = country.lon;
-        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`)
 
         .then(response => response.json())
         .then(data => {
