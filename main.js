@@ -9,8 +9,6 @@ const weatherDescription = document.querySelector('.weather-description');
 const noLocation = document.querySelector('.no-location');
 const weatherCard = document.querySelector('.weather-card');
 
-
-const apiKey = '5e09eff283f6ffc678ad2f5360e73b4a';
 const url = "http://api.openweathermap.org/geo/1.0/direct?q=puebla&appid=";
 
 
