@@ -8,7 +8,6 @@ const weatherIcon = document.querySelector('.weather-icon');
 const weatherDescription = document.querySelector('.weather-description');
 const noLocation = document.querySelector('.no-location');
 const weatherCard = document.querySelector('.weather-card');
-
 const url = "http://api.openweathermap.org/geo/1.0/direct?q=puebla&appid=";
 
 
@@ -20,6 +19,7 @@ form.addEventListener('submit', (e) => {
 });
 
 const apiCall = (city) => {
+  const API_KEY = process.env.API_KEY;
   fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${API_KEY}`)
   .then(response => response.json())
   .then(data => {
