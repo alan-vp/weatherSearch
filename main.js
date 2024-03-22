@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) => {
 });
 
 const apiCall = (city) => {
-  const API_KEY = process.env.API_KEY;
+  API_KEY = '5e09eff283f6ffc678ad2f5360e73b4a'
   fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${API_KEY}`)
   .then(response => response.json())
   .then(data => {
