@@ -55,10 +55,21 @@ input#location {
   border-radius: 5px;
   padding: 8px 0px;
   border: none;
-  background-color: #000000;
+  background-color: #000;
   color: whitesmoke;
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: 'Times New Roman';
+}
+
+.btn-search:active {
+  font-weight: 900;
+}
+
+.btn-search:hover {
+  opacity: .8;
+  background-color: darkgray;
+  color: #000;
 }
 
 .weather-card {
